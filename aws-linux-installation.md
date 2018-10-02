@@ -11,3 +11,7 @@ mvn --version
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
 ```
+
+```
+ssh -i "aws-mac.pem" ec2-user@ec2-18-216-165-133.us-east-2.compute.amazonaws.com
+```
