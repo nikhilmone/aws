@@ -1,3 +1,4 @@
+```
 sudo yum install epel-release
 sudo yum install docker
 sudo yum-config-manager --enable epel
@@ -9,3 +10,4 @@ sudo yum install -y apache-maven
 mvn --version
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
+```
