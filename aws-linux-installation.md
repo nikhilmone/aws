@@ -38,3 +38,15 @@ $ sudo service php-fpm start
 
 ## Add <file>.php to /var/www/html
 ## Verify configuration via http://www.domain.com/<file>.php
+  
+   65  service nginx status
+   66  sudo mkdir /etc/ssl/private
+   67  sudo chmod 700 /etc/ssl/private
+   68  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+   69  sudo ls -al /etc/ssl/private/
+   70  sudo su
+   71  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+   72  sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+   73  sudo vi /etc/nginx/conf.d/ssl.conf
+   
+   
